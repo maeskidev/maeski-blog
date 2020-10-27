@@ -1,0 +1,121 @@
+.menu{
+
+
+  box-shadow: 0px 0px 10px #ACACAC70;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box;
+// 68px es 4.7% en mi pantalla
+//width: 4.7% ;
+  width: 65px;
+  height: 100vh;
+
+
+  .logo-menu{
+    width:50px;
+    height:80px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   // border: 1px solid red;
+
+  }
+
+  .menu-nav{
+   // border: 1px solid black;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+   &>.nav-element{
+     // border: 1px solid blue;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 45px;
+      height:70px;
+
+      font-size: 12px;
+      // color:#ACACAC;
+      text-decoration: none;
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+        >a{color:#ACACAC;
+          text-decoration: none;
+
+        }
+
+        &>.nav-active{
+          color: black;
+          text-decoration: none;
+        }
+        &>.nav-active::before{
+          content: '';
+          position: absolute;
+          top: -26%;
+          left: 50%;
+          transform: translateX(50%);
+          width: 2px;
+          height: 20px;
+          background-color: #FA4729;
+          transition: 0.5s;
+        }
+        .nav-active:hover::before{
+          position: absolute;
+          top: -50%;
+          left: 50%;
+          transition: 0.5s;
+        }
+
+    }
+    &>.nav-element::before{
+      content: '';
+      position: absolute;
+      top: -26%;
+      left: 50%;
+      transform: translateX(50%);
+      width: 2px;
+      height: 20px;
+      background-color: #FA4729;
+      opacity: 0;
+      transition: 0.5s;
+    }
+    &>.nav-element:hover::before{
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      opacity: 1;
+      transition: 0.5s;
+    }
+
+  }
+  .menu-btn{
+    width:50px;
+    height:80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+   // border: 1px solid red;
+    >.dat-menu{
+      width: 4px;
+      height: 4px;
+      background-color: #7B8D9D;
+      border-radius: 100%;
+      margin: 3px;
+
+    }
+  }
+}
+

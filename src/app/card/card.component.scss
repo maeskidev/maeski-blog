@@ -1,0 +1,114 @@
+.card-container{
+  position: absolute;
+  left: 68px;
+  top: 50%; transform: translateY(-50%);
+
+//  border:1px solid black;
+  width: 33% ;
+  height: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  perspective: 700px;
+
+
+  >.card-imagen{
+    position: absolute;
+    top: 0px;
+    left: 50%;  transform: translateX(-50%);
+    width: 135px;
+    height: 175px;
+
+
+    object-fit: cover;
+
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+
+  >.card-view{
+    position: absolute;
+    top: 25px;
+    left: 50%;  transform: translateX(-50%);
+    width: 135px;
+    height: 150px;
+
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    background-image: linear-gradient(to top right, #eae8e8,#f4f4f4);
+    box-shadow: 10px 3px 45px #00000010;
+
+  }
+
+  .card-info{
+    position: absolute;
+    top: 110px;
+    left: 50%;  transform: translateX(-50%);
+    width: 160px;
+    height: 190px;
+
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    background-color: white;
+    box-shadow: 10px 10px 50px #00000020,
+                -10px 10px 50px #00000020;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+
+
+    .card-info-text{
+    //  border:1px solid yellow;
+      width:120px;
+      height: 124px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+
+
+      .card-title{
+        font-size: 12px;
+      //  border: 1px solid black;
+        margin: 0;
+      }
+      .card-cost{
+        font-size: 12px;
+       // border: 1px solid black;
+        margin: 0;
+      }
+      .card-coment{
+      //  border: 1px solid black;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .text-coment{
+          color:#CACACA;
+          font-size: 10px;
+        }
+        .color-icon{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color:white;
+          background-color: #fA4729;
+          font-size: 12px;
+          width: 26px; height: 26px;
+
+          border-radius: 100%;
+        }
+
+      }
+    }
+
+  }
+
+}
