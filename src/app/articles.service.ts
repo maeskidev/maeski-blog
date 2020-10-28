@@ -29,9 +29,12 @@ export class ArticlesService {
    getArticle(){
      return this.articulo;
    }
+
+
+
    //                   lo que vamos a devolver
    getJsonUsersAlbums() :Observable<any>{
-    const urlApi = "https://jsonplaceholder.typicode.com/comments";
+    const urlApi = "https://jsonplaceholder.typicode.com/albums";
     return this.http.get(urlApi);
 
    }

@@ -1,4 +1,5 @@
 <div class="contenedor">
+  <!--
   <div class="article" *ngFor="let articuloItem of articuloVar">
       <h2>
         {{ articuloItem.titulo}}
@@ -8,10 +9,18 @@
         {{articuloItem.cuerpo}}
       </p>
   </div>
-
+  -->
+  <div>
+    <h2 >
+      {{ allAlbums}}
+    </h2>
+    <p class="subtitulo">
+      subtitulo
+    </p>
+  </div>
   <cdk-virtual-scroll-viewport itemSize="50" class="scrollContainer">
-    <p class="texto-normal" *ngFor="let albums of allAlbums | async">
-      {{ albums.body}}
+    <p class="texto-normal" *cdkVirtualFor="let albums of allAlbums | async">
+      {{ albums.title}}
     </p>
   </cdk-virtual-scroll-viewport>
 

@@ -67,7 +67,8 @@
           transform: translateX(50%);
           width: 2px;
           height: 20px;
-          background-color: #FA4729;
+          //                  FA4729  rojo
+          background-color: #ffb6c1;
           transition: 0.5s;
         }
         .nav-active:hover::before{
@@ -86,7 +87,8 @@
       transform: translateX(50%);
       width: 2px;
       height: 20px;
-      background-color: #FA4729;
+      //                  FA4729  rojo
+      background-color: #ffb6c1;
       opacity: 0;
       transition: 0.5s;
     }
