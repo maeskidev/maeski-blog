@@ -8,4 +8,17 @@
         {{articuloItem.cuerpo}}
       </p>
   </div>
+
+  <cdk-virtual-scroll-viewport itemSize="50" class="scrollContainer">
+    <p class="texto-normal" *ngFor="let albums of allAlbums | async">
+      {{ albums.body}}
+    </p>
+  </cdk-virtual-scroll-viewport>
+
+
+
 </div>
+
+
+
+

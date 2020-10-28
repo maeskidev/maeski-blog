@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 //servicios
 import { ArticlesService } from './articles.service';
+//scroll
+import {ScrollingModule } from '@angular/cdk/scrolling'
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -25,7 +27,8 @@ import { ArrowsBtnComponent } from './arrows-btn/arrows-btn.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ScrollingModule
   ],
 
   //agregar servicio al proveedor

@@ -1,4 +1,7 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +20,7 @@ export class ArticlesService {
 
   ]
 
-  constructor() {
+  constructor( private http: HttpClient ) {
 
     console.log("Testttttttt")
    }
@@ -25,5 +28,11 @@ export class ArticlesService {
 
    getArticle(){
      return this.articulo;
+   }
+   //                   lo que vamos a devolver
+   getJsonUsersAlbums() :Observable<any>{
+    const urlApi = "https://jsonplaceholder.typicode.com/comments";
+    return this.http.get(urlApi);
+
    }
 }
